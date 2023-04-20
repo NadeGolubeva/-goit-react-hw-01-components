@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
+    <section class="statistics" key={stats.id}>
       <h2 class="title">{title}</h2>
 
       <ul class="stat-list">
