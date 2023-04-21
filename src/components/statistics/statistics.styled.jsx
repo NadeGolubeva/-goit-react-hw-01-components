@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 export const SectionStat = styled.section`
-margin: 65px;
+margin: 25px;
   border: 1px solid rgb(202 200 200);
   
 `;
