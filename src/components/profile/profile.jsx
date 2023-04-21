@@ -5,7 +5,8 @@ import {
   ListStats,
   ImgProfile,
   ItemProfile,
-} from '../profile/profile.styled.js';
+  Name, Label, Quntity,
+} from './profile.styled.jsx';
 export const Profile = ({
   username,
   tag,
@@ -24,25 +25,25 @@ export const Profile = ({
           className="avatar"
           width="190"
         />
-        <p className="name">{username}</p>
+        <Name className="name">{username}</Name>
 
-        <p className="tag">@{tag}</p>
+        <Name className="tag">@{tag}</Name>
 
-        <p className="location">{location}</p>
+        <Name className="location">{location}</Name>
       </Description>
 
       <ListStats className="stats">
         <ItemProfile>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <Label className="label">Followers</Label>
+          <Quntity className="quantity">{followers}</Quntity>
         </ItemProfile>
         <ItemProfile>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+          <Label className="label">Views</Label>
+          <Quntity className="quantity">{views}</Quntity>
         </ItemProfile>
         <ItemProfile>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <Label className="label">Likes</Label>
+          <Quntity className="quantity">{likes}</Quntity>
         </ItemProfile>
       </ListStats>
     </Card>
