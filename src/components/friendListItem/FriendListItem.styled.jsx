@@ -33,6 +33,6 @@ export const StatusGreen = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: rgb(166 157 157;
+  background: rgb(166 157 157);
   `;
   
