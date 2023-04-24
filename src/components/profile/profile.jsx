@@ -8,13 +8,13 @@ import {
   Name, Label, Quntity,
 } from './profile.styled.jsx';
 export const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
+  user: { username,
+    tag,
+    location,
+    avatar,
+    followers,
+    views,
+    likes },
 }) => {
   return (
     <Card>

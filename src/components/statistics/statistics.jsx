@@ -6,32 +6,30 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <SectionStat class="statistics" key={stats.id}>
-      <TitleStat class="title">{title}</TitleStat>
-
-      <StatList class="stat-list">
-        <ItemStat class="item">
-          <LabelStat class="label">.docx</LabelStat>
-          <NumberStat class="percentage">4%</NumberStat>
+      {{ title } && (<TitleStat class="title">{title}</TitleStat>)}
+      <StatList class="stat-list" >
+      {stats.map(({ id, label, percentage }) => {
+return (
+          
+          
+         <ItemStat class="item" key = {id}>
+          <LabelStat class="label">{label}</LabelStat>
+          <NumberStat class="percentage">{percentage}</NumberStat>
         </ItemStat>
-        <ItemStat class="item">
-          <LabelStat class="label">.mp3</LabelStat>
-          <NumberStat class="percentage">14%</NumberStat>
-        </ItemStat>
-        <ItemStat class="item">
-          <LabelStat class="label">.pdf</LabelStat>
-          <NumberStat class="percentage">41%</NumberStat>
-        </ItemStat>
-        <ItemStat class="item">
-          <LabelStat class="label">.mp4</LabelStat>
-          <NumberStat class="percentage">12%</NumberStat>
-        </ItemStat>
+        )
+       })}
+        
+   
       </StatList>
     </SectionStat>
   );
 };
 
 Statistics.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired
 }

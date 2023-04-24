@@ -31,13 +31,9 @@ TransactionHistory.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     type: PropTypes.oneOf(['invoice', 'payment', 'withdrawal']).isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
     })
   ).isRequired,
     
 }
-//  "id": "44dca67a-8e5a-4798-bf8e-b15efd4e1abd",
-//     "type": "invoice",
-//     "amount": "828.62",
-//     "currency": "UGX"

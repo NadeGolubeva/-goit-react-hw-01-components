@@ -21,4 +21,3 @@ FriendItem.propTypes = {
 
 }
 
-//     "id": 1137

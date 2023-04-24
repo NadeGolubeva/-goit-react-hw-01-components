@@ -21,7 +21,7 @@ display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-  background: linear-gradient(to right, blue 25%,  violet 25%, violet 50%, tomato 50%, tomato 75%, rgb(87 161 153) 75%);
+  background: linear-gradient(to right, blue 20%,  violet 20%, violet 40%, tomato 40%, tomato 60%, rgb(200 126 126) 60%, rgb(200 126 126) 80%, rgb(28 96 19) 80%);
 `;
 
 export const ItemStat = styled.li`
