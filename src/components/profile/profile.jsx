@@ -12,9 +12,13 @@ export const Profile = ({
     tag,
     location,
     avatar,
-    followers,
-    views,
-    likes },
+    stats: {
+
+      followers,
+      views,
+      likes
+    },
+  },
 }) => {
   return (
     <Card>
@@ -56,8 +60,10 @@ Profile.propTypes = {
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-    followers: PropTypes.number.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,}).isRequired
+    
   }).isRequired,
 };

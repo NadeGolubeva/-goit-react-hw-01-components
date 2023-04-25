@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { TransactionTable, TableHead, TableHeadRow, TableRow } from './transactionHistory.styled';
 export const TransactionHistory = ({ transactions }) => {
     return (
-        <TransactionTable class="transaction-history">
+        <TransactionTable>
+
   <TableHead>
     <tr>
       <TableHeadRow>Type</TableHeadRow>
